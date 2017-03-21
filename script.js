@@ -1,6 +1,6 @@
 var city = "";
 
-$(document).ready(function(){ 
+$(document).ready(function(){
 	     $('button').click(function(){
 		 var city = document.getElementById('citytext').value;
          console.log("stocke");
@@ -19,10 +19,10 @@ xhr.onreadystatechange = function() {
 	    var data = JSON.parse(xhr.responseText);
     } else {
         console.log('Une erreur s’est produite.');
-    }  
+    }
     };
 
-xhr.open("GET", "http://api.openweathermap.org/data/2.5/find?q=" + city + "&units=metric&APPID=c8b12079e9467ab075130e3b4a785750", true);
+xhr.open("GET", "http://api.openweathermap.org/data/2.5/find?q=" + city + "&units=metric&APPID=xxxxxxxxxxxx", true);
 xhr.send(null);
 // }};
 	    };
@@ -42,15 +42,15 @@ xhr.send(null);
 // function readData(sData) {
 	// var nodes = oData.getElementsByTagName("soft");
 	//var ol = document.createElement("ol"), li, cn;
-	
+
 	//for (var i=0, c=nodes.length; i<c; i++) {
 	//	li = document.createElement("li");
 	//	cn = document.createTextNode(nodes[i].getAttribute("name"));
-		
+
 	//	li.appendChild(cn);
 	//	ol.appendChild(li);
 	// }
-	
+
 	// document.getElementById("output").appendChild(ol);
 //};
 
